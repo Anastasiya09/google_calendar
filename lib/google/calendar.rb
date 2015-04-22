@@ -272,7 +272,7 @@ module Google
     # Wraps the `send` method. Send an event related request to Google.
     #
     def send_events_request(path_and_query_string, method, content = '')
-      @connection.send("/calendars/#{CGI::escape @id}/events#{path_and_query_string}", method, content)
+      @connection.send("/calendars/#{CGI::escape @id}/events#{path_and_query_string}?sendNotifications=true", method, content)
     end
   end
 
