@@ -237,7 +237,7 @@ module Google
         \"visibility\": \"#{visibility}\",
         \"description\": \"#{description}\",
         \"location\": \"#{location}\",
-         \"location\": \"#{location}\",
+        \"guestsCanSeeOtherGuests\": \"false\",
         \"start\": {
           \"dateTime\": \"#{start_time}\"
           #{timezone_needed? ? local_timezone_json : ''}
